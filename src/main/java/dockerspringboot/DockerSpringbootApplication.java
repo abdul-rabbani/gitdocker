@@ -15,7 +15,7 @@ public class DockerSpringbootApplication {
 	
 	@GetMapping(value = "/getmsg")
 	public String getMsg() {
-		return "Welcome To Firt Docker API";
+		return "Welcome To First Docker API";
 	}
 
 }

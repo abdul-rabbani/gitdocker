@@ -1,7 +1,7 @@
 #FROM java:8
-#ADD target/docker-springboot-0.0.1-SNAPSHOT.jar docker-springboot-0.0.1-SNAPSHOT.jar
+#ADD target/docker-springboot-1.0.jar docker-springboot-1.0.jar
 #EXPOSE 9098
-#ENTRYPOINT java -jar docker-springboot-0.0.1-SNAPSHOT.jar
+#ENTRYPOINT java -jar docker-springboot-1.0.jar
 
 
 # Start with a base image containing Java runtime
@@ -17,7 +17,7 @@ VOLUME /tmp
 EXPOSE 9098
 
 # The application's jar file
-ARG JAR_FILE=target/docker-springboot-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/docker-springboot-1.0.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} docker-springboot.jar
